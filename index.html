@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>산본고등학교 급식 정보</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍽️ 산본고등학교 급식 정보</h1>
+        </header>
+        
+        <main>
+            <div class="date-selector">
+                <label for="mealDate">급식 조회 날짜:</label>
+                <input type="date" id="mealDate" />
+                <button id="searchBtn">급식 정보 조회</button>
+            </div>
+            
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>급식 정보를 불러오는 중...</p>
+            </div>
+            
+            <div id="mealInfo" class="meal-info">
+                <p class="instruction">날짜를 선택하고 조회 버튼을 눌러주세요.</p>
+            </div>
+            
+            <div id="error" class="error hidden">
+                <p>급식 정보를 불러오는 중 오류가 발생했습니다.</p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>데이터 출처: 나이스 교육정보 개방 포털</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
